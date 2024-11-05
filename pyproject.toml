@@ -1,6 +1,6 @@
 [project]
 name = "pin-generator-1-relduz-chloe"
-version = "0.1.1"
+version = "0.1.2"
 authors = [{ name = "Chloe", email = "ctao1206@gmail.com" }]
 description = "4 digit pin generator"
 readme = "README.md"

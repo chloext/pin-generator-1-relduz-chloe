@@ -27,7 +27,7 @@ def batch_generate_pin(batch_size: int = 1000, log: bool = False) -> list[str]:
     * 3 consecutive digits should not be incremental.
     :param batch_size: number of pins generated
     :param log: log process time tracked
-    :return: list of 4 digits pins in int
+    :return: list of 4 digits pins as string
     """
     start = time.time()
 
@@ -46,6 +46,6 @@ def batch_generate_pin(batch_size: int = 1000, log: bool = False) -> list[str]:
     if log:
         generating_time = (time.time() - start) * 1000
         print(f"Generated {batch_size} pins in {generating_time:.4f} ms", end=", ")
-        print(f"rate at {generating_time/batch_size:.4f} pins per ms")
+        print(f"rate at {generating_time/batch_size:.4f} ms per pin")
 
     return pins
